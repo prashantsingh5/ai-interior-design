@@ -152,6 +152,16 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 |:--------:|:-----------------------------:|:------:|
 | ![test_img](https://github.com/user-attachments/assets/187cd903-5d8d-4e3a-97be-0624f104c2c9) | ➡️ | ![image](https://github.com/user-attachments/assets/3ac87286-7d48-42ac-b7c1-13cfa66408b6) |
 
+### Object Detection
+| Original | Objects - "photo frame" | Result |
+|:--------:|:-----------------------------:|:------:|
+| ![test_img (1)](https://github.com/user-attachments/assets/43abadd0-8b9f-4c2e-a6c2-49c5ab485ddf) | ➡️ | ![image](https://github.com/user-attachments/assets/d2f939a5-cdb0-46a7-9b2b-98990f19dae6) |
+
+### Wallpaper
+| Original | Wallpaper | Result |
+|:-------:|:-----:|:------:|
+| ![test_img](https://github.com/user-attachments/assets/64c49cf3-d350-408c-8ec6-8cee1404cf78) | ![tile8](https://github.com/user-attachments/assets/41fd54e4-e4a7-4a5d-a4ce-cfc1b9915dc5) | <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/40cdb82d-03cf-482e-924a-724c6c60bdf0" /> |
+
 </div>
 
 > 💡 **Tip:** Replace placeholder images in `docs/images/` with your own screenshots!
