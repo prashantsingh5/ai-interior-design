@@ -160,7 +160,7 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 ### Wallpaper
 | Original | Wallpaper | Result |
 |:-------:|:-----:|:------:|
-| ![test_img](https://github.com/user-attachments/assets/64c49cf3-d350-408c-8ec6-8cee1404cf78) | <img src="[URL2](https://github.com/user-attachments/assets/41fd54e4-e4a7-4a5d-a4ce-cfc1b9915dc5)" width="1024"/> | <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/40cdb82d-03cf-482e-924a-724c6c60bdf0" /> |
+| ![test_img](https://github.com/user-attachments/assets/64c49cf3-d350-408c-8ec6-8cee1404cf78) | <img src="https://github.com/user-attachments/assets/41fd54e4-e4a7-4a5d-a4ce-cfc1b9915dc5" width="1024"/> | <img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/40cdb82d-03cf-482e-924a-724c6c60bdf0" /> |
 
 </div>
 
