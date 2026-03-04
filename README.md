@@ -8,6 +8,16 @@
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![Flask](https://img.shields.io/badge/Flask-2.0%2B-000000?style=for-the-badge&logo=flask&logoColor=white)](https://flask.palletsprojects.com/)
 [![Gradio](https://img.shields.io/badge/Gradio-UI-FF7C00?style=for-the-badge&logo=gradio&logoColor=white)](https://gradio.app/)
+
+
+
+
+
+
+
+
+
+
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 [![CUDA](https://img.shields.io/badge/CUDA-Supported-76B900?style=for-the-badge&logo=nvidia&logoColor=white)](https://developer.nvidia.com/cuda-toolkit)
 
@@ -130,7 +140,7 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 ### Wall Color Change
 | Original | Light Blue | Sage Green |
 |:--------:|:----------:|:----------:|
-| <img src="docs/images/placeholder.png" width="200"/> | <img src="docs/images/placeholder.png" width="200"/> | <img src="docs/images/placeholder.png" width="200"/> |
+| ![test_img](https://github.com/user-attachments/assets/6aa5f4bd-6439-44a6-8ea2-f59fad69dc45) | <img src="docs/images/placeholder.png" width="200"/> | <img src="docs/images/placeholder.png" width="200"/> |
 
 ### Style Transfer
 | Content | Style | Result |
