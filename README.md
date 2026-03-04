@@ -145,12 +145,12 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 ### Style Transfer
 | Content | Style | Result |
 |:-------:|:-----:|:------:|
-| <img src="docs/images/placeholder.png" width="200"/> | <img src="docs/images/placeholder.png" width="200"/> | <img src="docs/images/placeholder.png" width="200"/> |
+|  ![abstract](https://github.com/user-attachments/assets/e4f92119-ef19-4dba-95e7-9e6e049bad2f)| ![sketch](https://github.com/user-attachments/assets/84fa4ada-f4d7-45cf-b821-7631b8844fb5) | ![image](https://github.com/user-attachments/assets/092d9235-cefd-45b0-b028-53b5e3d2d1f1) |
 
 ### AI Inpainting
-| Original | Prompt: "modern leather sofa" | Result |
+| Original | Prompt: "an abstact photo frame" | Result |
 |:--------:|:-----------------------------:|:------:|
-| <img src="docs/images/placeholder.png" width="200"/> | ➡️ | <img src="docs/images/placeholder.png" width="200"/> |
+| ![test_img](https://github.com/user-attachments/assets/187cd903-5d8d-4e3a-97be-0624f104c2c9) | ➡️ | ![image](https://github.com/user-attachments/assets/3ac87286-7d48-42ac-b7c1-13cfa66408b6) |
 
 </div>
 
