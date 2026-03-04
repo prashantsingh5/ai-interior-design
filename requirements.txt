@@ -1,0 +1,50 @@
+# AI Interior Design Studio - Requirements
+# ==========================================
+
+# Web Framework
+flask>=2.0.0
+python-dotenv>=1.0.0
+werkzeug>=2.0.0
+
+# Deep Learning - PyTorch
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Deep Learning - TensorFlow
+tensorflow>=2.10.0
+
+# Image Processing
+opencv-python>=4.8.0
+Pillow>=9.0.0
+numpy>=1.24.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+pandas>=2.0.0
+
+# Hugging Face & Diffusers
+# NOTE: Versions are pinned to keep GroundingDINO + Stable Diffusion Inpainting compatible.
+transformers==4.46.3
+diffusers==0.36.0
+huggingface-hub==0.36.2
+
+# Gradio UI
+gradio>=6.0.0
+
+# Segmentation Models
+segment-anything>=1.0
+groundingdino-py>=0.4.0
+
+# Utilities
+tqdm>=4.65.0
+requests>=2.28.0
+matplotlib>=3.7.0
+
+# Optional: For better GPU memory management
+# accelerate>=0.20.0
+# xformers>=0.0.20
+
+# Development
+pytest>=7.0.0
+pytest-cov>=4.0.0
