@@ -138,9 +138,9 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 <div align="center">
 
 ### Wall Color Change
-| Original | Light Blue | Sage Green |
+| Original | Orange | cyan |
 |:--------:|:----------:|:----------:|
-| ![test_img](https://github.com/user-attachments/assets/6aa5f4bd-6439-44a6-8ea2-f59fad69dc45) | <img src="docs/images/placeholder.png" width="200"/> | <img src="docs/images/placeholder.png" width="200"/> |
+| ![test_img](https://github.com/user-attachments/assets/6aa5f4bd-6439-44a6-8ea2-f59fad69dc45) | ![image (1)](https://github.com/user-attachments/assets/d4a6caa1-5ab8-4c5e-9714-7db83b42a862) | ![image](https://github.com/user-attachments/assets/de8706b3-818e-4782-884e-38356da5d8ea) |
 
 ### Style Transfer
 | Content | Style | Result |
