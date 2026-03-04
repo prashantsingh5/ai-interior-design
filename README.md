@@ -164,7 +164,11 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 
 </div>
 
-> 💡 **Tip:** Replace placeholder images in `docs/images/` with your own screenshots!
+<br/>
+
+## 🏗️ Architecture
+
+![Architecture Diagram](docs/images/architecture.png)
 
 <br/>
 
