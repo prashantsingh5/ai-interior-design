@@ -40,6 +40,15 @@
 
 </div>
 
+## Demo
+
+
+
+https://github.com/user-attachments/assets/7a73b3b4-81e7-48eb-88fe-975339558958
+
+
+
+
 ## 🌟 Why This Project?
 
 Interior design visualization typically requires expensive software or professional services. This project democratizes AI-powered design tools by combining **5 state-of-the-art models** into a single, easy-to-use platform:
