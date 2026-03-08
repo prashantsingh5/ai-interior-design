@@ -177,31 +177,102 @@ Get intelligent suggestions using **ResNet50** feature extraction.
 
 ## 🏗️ Architecture
 
-![Architecture Diagram](docs/images/architecture.png)
+```mermaid
+flowchart TB
+  %% Clients
+  subgraph Clients
+    U1[Gradio Web UI<br/>gradio_app.py]
+    U2[REST API Clients]
+  end
 
-<br/>
+  %% Application
+  subgraph App[Flask Application Layer]
+    F[App Entry<br/>run.py and app.create_app()]
 
-## 🏗️ System Architecture
+    subgraph API_Layer[Blueprint APIs in app/api]
+      A1[wall_color.py]
+      A2[object_detection.py]
+      A3[wallpaper.py]
+      A4[inpainting.py]
+      A5[style_transfer.py]
+      A6[recommendations.py]
+      A7[tiles.py]
+    end
 
-```
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                           🌐 Client Layer                                    │
-│                    Gradio Web UI  │  REST API Clients                        │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                         🚀 Flask API Gateway                                 │
-│              Authentication  │  Rate Limiting  │  File Handling             │
-├─────────────┬─────────────┬─────────────┬──────────────┬────────────────────┤
-│  🎨 Wall    │  🖼️ Style   │  ✏️ Inpaint │  🔍 Detect   │  🏷️ Recommend     │
-│   Color     │  Transfer   │   Service   │   Service    │    Service         │
-├─────────────┴─────────────┴─────────────┴──────────────┴────────────────────┤
-│                          🧠 AI Model Layer                                   │
-│   ┌─────────────┐  ┌──────────────┐  ┌───────────────────┐  ┌─────────────┐ │
-│   │     SAM     │  │ GroundingDINO│  │ Stable Diffusion  │  │   VGG19     │ │
-│   │ (Meta AI)   │  │   (IDEA)     │  │   Inpainting      │  │   ResNet50  │ │
-│   └─────────────┘  └──────────────┘  └───────────────────┘  └─────────────┘ │
-├─────────────────────────────────────────────────────────────────────────────┤
-│                       ⚡ PyTorch + CUDA Runtime                              │
-└─────────────────────────────────────────────────────────────────────────────┘
+    subgraph Service_Layer[AI Services in app/services]
+      S1[SegmentationService]
+      S2[InpaintingService]
+      S3[StyleTransferService]
+      S4[RecommendationService]
+    end
+
+    Utils[Utilities<br/>app/utils/image_processing.py]
+  end
+
+  %% Models
+  subgraph Model_Layer[Model Layer]
+    M1[GroundingDINO]
+    M2[SAM]
+    M3[Stable Diffusion Inpainting]
+    M4[VGG19]
+    M5[ResNet50]
+  end
+
+  %% Storage
+  subgraph Storage[Data and Storage]
+    D1[media/*<br/>inputs and outputs]
+    D2[data/tiles/*<br/>tile gallery assets]
+    D3[data/image_features.csv<br/>recommendation index]
+    D4[weights/* and HF cache]
+  end
+
+  R1[Runtime<br/>PyTorch and TensorFlow on CPU or CUDA]
+
+  %% Client to app
+  U1 --> F
+  U2 --> F
+
+  %% App to APIs
+  F --> A1
+  F --> A2
+  F --> A3
+  F --> A4
+  F --> A5
+  F --> A6
+  F --> A7
+
+  %% API to services
+  A1 --> S1
+  A2 --> S1
+  A3 --> S1
+  A4 --> S2
+  A5 --> S3
+  A6 --> S4
+  A7 --> D2
+
+  %% Internal service collaboration
+  S2 --> S1
+
+  %% Service to model dependencies
+  S1 --> M1
+  S1 --> M2
+  S2 --> M3
+  S3 --> M4
+  S4 --> M5
+
+  %% Runtime and storage dependencies
+  S1 --> R1
+  S2 --> R1
+  S3 --> R1
+  S4 --> R1
+  S1 --> D4
+  S2 --> D4
+  S1 --> D1
+  S2 --> D1
+  S4 --> D3
+  A1 --> Utils
+  A3 --> Utils
+  A4 --> Utils
 ```
 
 <br/>
